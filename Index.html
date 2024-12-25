@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="icon" href="university3.jpg">
+
+        <style type="text/css">
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        #div1{
+            text-align: center;
+            padding: 20px;
+            margin:auto;
+            background-color: hsl(44, 63%, 80%);
+            animation: fadeIn 2s ease-in;
+        }
+
+        @keyframes slideUp {
+            0% {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .div2{
+            text-align: center;
+            padding: 15px; ;
+            margin:auto;
+            background-color: hsl(39, 30%, 40%);
+            animation: slideUp 2s ease-out;
+        }
+
+
+        @keyframes growText {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        
+       #div1 img:hover{
+        object-fit: fill;
+        box-shadow: 0 0 10px 10px chocolate;
+       }
+
+
+        h3{
+            animation: growText 1s ease-out;
+        } 
+        h1{color:rgba(175, 125, 18, 0.507); 
+        font-style:italic;
+        }
+        h2{color:rgb(202, 157, 8); 
+        font-style:italic;
+        }
+        span.b{
+        color: rgb(202, 171, 84);
+        }
+        .r{
+        color: rgb(145, 120, 37);
+        }
+        </style>
+    </head>
+
+    <body>
+         <div id="div1">
+            <span style="font-size: 30px; border: 2px solid rgb(83, 66, 34); padding: 2px;">Welcome to the facualty of science</span>
+            <table>
+                <tr>
+                    <td> <img src="university1.jpg" weidth="50px" height="200px" border="weight" alt="this photo not found"/>
+                    </td>
+                    <td><img src="university2.jpg" weidth="50px" height="200px" border="weight" alt="this photo not found"/></td>
+                </tr>
+                </table>
+        <div class="div2">
+        <h2>Who are you?</h2>
+        <hr width="50%">
+        <nav>
+            
+            <a href="Student.html"><h3>Student</h3></a>
+            <a href="Employee.html"><h3>Employee</h3></a>
+            
+        </nav>
+         </div>
+         </div>
+
+        <script>
+         function displayDate(){
+            today=new Date();
+            alert(today);
+
+        }
+        
+    </script>
+    <center>
+        <button onclick="window.close()">Close</button>
+        <button onclick="window.displayDate()">Date/time</button>
+    </center>
+    </body>
+</html>

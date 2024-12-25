@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <title> Calculate CGPA </title>
+        <link rel="icon" href="university3.jpg">
+
+        <style>
+            a:link{
+                     
+                     text-decoration:none ;
+                     color: rgb(233, 153, 49);
+                     margin: 10px;
+                     background-color: #ffd29c;
+                     font-size: 25px;
+            }
+            a:visited{
+                    color: rgb(109, 87, 26);
+            }
+            a:hover{
+                    background-color: rgb(201, 166, 113);
+                    padding: 10px;
+            }
+            nav{
+                padding: 5px;
+            }
+        .done2{
+            text-align: center;
+            background-color: rgb(189, 138, 28);
+            border-radius: 20px;
+            font-size: 5px;
+        }
+    </style>
+
+    </head>
+    <body>
+        <script language="javascript">
+
+            function f(){
+                n1=parseFloat(document.form.s1.value);
+                n2=parseFloat(document.form.s2.value);
+                n3=parseFloat(document.form.s3.value);
+                n4=parseFloat(document.form.s4.value);
+                n5=parseFloat(document.form.s5.value);
+                n6=parseFloat(document.form.s6.value);
+                n7=parseFloat(document.form.s7.value);
+
+                m1=parseFloat(document.form.z1.value);
+                m2=parseFloat(document.form.z2.value);
+                m3=parseFloat(document.form.z3.value);
+                m4=parseFloat(document.form.z4.value);
+                m5=parseFloat(document.form.z5.value);
+                m6=parseFloat(document.form.z6.value);
+                m7=parseFloat(document.form.z7.value);
+                
+                s=((m1*n1)+(m2*n2)+(m3*n3)+(m4*n4)+(m5*n5)+(m6*n6)+(m7*n7));
+                r=(m1+m2+m3+m4+m5+m6+m7);
+                result=s/r;
+                document.form.result.value=result;
+            }
+
+        </script>
+        <form name="form"> 
+            <center>
+            
+            Enter 1st subject:<input name="s1">
+            Enter hours of 1st subject:<input name="z1">
+            <br>
+
+            Enter 2nd subject:<input name="s2">
+            Enter hours of 2nd subject:<input name="z2">
+            <br>
+
+            Enter 3rd subject:<input name="s3">
+            Enter hours of 3rd subject:<input name="z3">
+            <br>
+
+            Enter 4th subject:<input name="s4">
+            Enter hours of 4th subject:<input name="z4">
+            <br>
+
+            Enter 5th subject:<input name="s5">
+            Enter hours of 5th subject:<input name="z5">
+            <br>
+
+            Enter 6th subject:<input name="s6">
+            Enter hours of 6th subject:<input name="z6">
+            <br>
+
+            Enter 7th subject:<input name="s7">
+            Enter hours of 7th subject:<input name="z7">
+            <br>
+            
+            <button onclick="f()" type="button">calculate cgpa</button>
+            <br>
+            Result:<input name="result" disabled>
+            <button onclick="f()" type="reset">Reset</button>
+            <br> 
+
+        </center>
+            </form>
+
+            <div class="done2">
+                <nav>
+                <a href="Index.html">Home</a>
+                <a href="AddNewStudent.html">Back</a>
+
+                </nav>
+            </div>
+
+    </body>
+</html>
